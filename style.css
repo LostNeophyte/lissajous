@@ -1,0 +1,36 @@
+@import "nord.css";
+html,
+body {
+  color-scheme: dark;
+  margin: 0;
+  background: var(--nord0);
+  color: var(--nord6);
+}
+body {
+  display: flex;
+  width: calc(100% - 4em);
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3em;
+  margin: 0 4em;
+}
+body > main {
+  max-width: 1400px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 8em;
+}
+#canvas {
+  width: 500px;
+  height: 500px;
+  border: 5px var(--nord2) solid;
+  padding: 1em;
+}
+
+input[type="number"] {
+  margin: 0.4em;
+}
